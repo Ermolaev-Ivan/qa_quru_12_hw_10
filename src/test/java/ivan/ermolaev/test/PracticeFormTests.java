@@ -1,19 +1,16 @@
 package ivan.ermolaev.test;
 
-import com.codeborne.selenide.Configuration;
+import io.qameta.allure.Owner;
 import ivan.ermolaev.pages.RegistrationPage;
 import ivan.ermolaev.utils.FakeData;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class PracticeFormTests {
-
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.browserSize = "1920x1080";
-    }
+public class PracticeFormTests  extends TestBase {
 
     @Test
+    @Owner("Ermolaev Ivan")
+    @DisplayName("Test Practice Form")
     void formTest() {
         RegistrationPage registrationPage = new RegistrationPage();
         FakeData fakeData = new FakeData();

@@ -2,6 +2,7 @@ package ivan.ermolaev.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import ivan.ermolaev.pages.components.CalendarComponent;
+import ivan.ermolaev.test.TestBase;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -10,9 +11,9 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-public class RegistrationPage {
+public class RegistrationPage{
 
-    String url_page_form = "https://demoqa.com/automation-practice-form";
+    String url_page_form = "/automation-practice-form";
 
     SelenideElement
         firstNameInput =  $("#firstName"),
